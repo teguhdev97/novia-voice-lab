@@ -1,0 +1,61 @@
+# Python environments and tooling
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.pyd
+.Python
+build/
+dist/
+*.egg
+*.egg-info/
+pip-wheel-metadata/
+.tox/
+.nox/
+.pytest_cache/
+.hypothesis/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+.uv-cache/
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Project-generated artifacts
+/outputs/
+/logs/
+/runs/
+/checkpoints/
+/tensorboard/
+*.log
+*.ckpt
+*.onnx
+*.pt
+*.pth
+*.safetensors
+
+# Voice data: keep only the empty metadata templates in version control
+/datasets/approved/
+/datasets/incoming/
+/datasets/reference/
+/datasets/rejected/
+/datasets/**/*.wav
+/datasets/**/*.mp3
+/datasets/**/*.flac
+/datasets/**/*.ogg
+/datasets/**/*.m4a
+
+# Editor and operating-system files
+.vscode/
+.idea/
+*.code-workspace
+.DS_Store
+Thumbs.db
